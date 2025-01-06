@@ -1,0 +1,67 @@
+/* Reseteo de estilos predeterminados del navegador */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos de la barra de navegación */
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    background-color: #333;
+}
+
+.navbar>li {
+    position: relative;
+    /* Necesario para el posicionamiento absoluto de los submenús */
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+
+/* Estilos de los submenús */
+
+.subnav {
+    display: none;
+    /* Ocultar submenús por defecto */
+    position: absolute;
+    top: 100%;
+    /* Posicionar submenú debajo del elemento padre */
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    min-width: 200px;
+}
+
+.subnav li {
+    position: relative;
+}
+
+.subnav a {
+    padding: 10px;
+    color: white;
+}
+
+.subnav a:hover {
+    background-color: #666;
+}
+
+
+/* Mostrar el submenú al pasar el ratón sobre el elemento del menú principal */
+
+.navbar>li:hover>.subnav {
+    display: block;
+}

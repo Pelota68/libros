@@ -1,0 +1,49 @@
+/* contenidos de estilos.css */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Asegurar que la altura mínima del body sea del 100% de la ventana */
+}
+
+.content-wrapper {
+    flex: 1;
+    /* Para llenar el espacio restante */
+}
+
+.footer-navbar {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #1d0ee2;
+    /* Borde negro */
+    padding: 10px;
+    background-color: #f8f9fa;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #1d0ee2;
+    /* Borde negro */
+    padding: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section a {
+    margin: 0;
+    padding: 0;
+}

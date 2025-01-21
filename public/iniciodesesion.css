@@ -1,0 +1,91 @@
+/* Estilo para el formulario con borde */
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+
+/* Entradas de texto y contraseña de ancho completo */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Estilo general para todos los botones */
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* Efecto hover para los botones */
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Estilo extra para el botón de cancelar (rojo) */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+/* Centrar la imagen del avatar dentro de este contenedor */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+
+/* Imagen del avatar */
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+/* Añadir padding a los contenedores */
+
+.container {
+    padding: 16px;
+}
+
+
+/* El texto "Forgot password" */
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* Cambiar estilos para span y el botón de cancelar en pantallas extra pequeñas */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}

@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'libros.html'));
 });
 
-// Configurar pool de conexiones a MariaDB
+// Configurar pool de conexiones a MariaDBno
 const pool = mariadb.createPool({
     host: '127.0.0.1',
     user: 'root',

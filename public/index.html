@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,10 +10,20 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
     <!-- Aquí enlazas tu archivo CSS -->
+    <style>
+        .contenedor {
+            display: flex;
+            align-items: flex-start;
+            /* Alinear los elementos al inicio (arriba) */
+        }
+        
+        .contenedor img {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
-
     <header>
         <nav>
             <ul class="navbar">
@@ -51,52 +61,51 @@
             </ul>
         </nav>
     </header>
+    <section>
+        <div class="contenedor">
+            <img src="GABO-UNO.jpg" alt="logo librería" width="300" height="350">
+            <img src="cien años de soledad.jpg" alt="Imagen de Gabriel García Márquez" width="200" height="350">
+            <img src="don quijote.jpg" alt="Imagen de don quijote" width="200" height="350">
+        </div>
+    </section>
 
-    <div class="content-wrapper">
-        <img src="GABO-UNO.jpg" alt="logo librería" width="500" height="150">
-
-        <section>
-            <p>
-                Deberíamos aprender a interactuar con los libros digitales como lo hacemos con los libros tradicionales, usando las nuevas tecnologías para subrayar ideas principales, verbos, opiniones clave y el contexto de lo que ocurre.
-            </p>
-
-            <p>
-                No hay medicina que cure lo que no cura la felicidad. - Gabriel García Márquez,
-                <em>Del amor y otros demonios</em>
-            </p>
-            <p>
-                En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. - <em>Don Quijote de la Mancha</em>
-            </p>
-        </section>
+    <div class="contenedor-parrafos ">
+        <p>
+            Deberíamos aprender a interactuar con los libros digitales como lo hacemos con los libros tradicionales, usando las nuevas tecnologías para subrayar ideas principales, verbos, opiniones clave y el contexto de lo que ocurre.
+        </p>
+        <p>
+            No hay medicina que cure lo que no cura la felicidad. - Gabriel García Márquez,
+            <em>Del amor y otros demonios</em>
+        </p>
+        <p>
+            En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. - <em>Don Quijote de la Mancha</em>
+        </p>
     </div>
 
+    </section>
     <footer>
         <!-- Footer con barra de navegación horizontal -->
-        <nav class="footer-navbar">
-
-            <ul class="navbar">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">mapa de navegacion </a>
+        <nav class="footer-navbar ">
+            <ul class="navbar ">
+                <li class="nav-item active ">
+                    <a class="nav-link " href="# ">mapa de navegacion </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca de Nosotros</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">Acerca de Nosotros</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">Contacto</a>
                 </li>
             </ul>
         </nav>
-
-
     </footer>
 
     <!-- Scripts de Bootstrap y dependencias -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="server.js"></script>
-    <script src="libros.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+    <script src="server.js "></script>
+    <script src="libros.js "></script>
 </body>
 
 </html>

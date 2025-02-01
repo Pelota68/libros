@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Imagen</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="contenedor">
+            <img src="GABO-UNO.jpg" alt="logo librería" width="300" height="350">
+            <button onclick="showImage()">Imagen del libro</button>
+        </div>
+
+        <div id="imageContainer" style="display: none;">
+            <img src="cien años de soledad.jpg" alt="Imagen de Gabriel García Márquez" width="200" height="200">
+        </div>
+
+        <script>
+            function showImage() {
+                document.getElementById('imageContainer').style.display = 'block';
+            }
+        </script>
+    </section>
+</body>
+
+</html>

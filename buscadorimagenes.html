@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar Imagen</title>
-</head>
-
-<body>
-
-    <section>
-        <div class="contenedor">
-            <img src="GABO-UNO.jpg" alt="logo librería" width="300" height="350">
-            <button onclick="showImage()">Imagen del libro</button>
+<section>
+    <div class="contenedor" style="display: flex;">
+        <div style="text-align: center; margin-right: 20px;">
+            <img src="harry potter.jpg" alt="logo librería" width="200" height="350">
+            <p style="width: 200px;">En esta historia, conocemos a Harry, un niño huérfano que descubre que es un mago en su cumpleaños número 11. Recibe una carta para asistir al Colegio Hogwarts de Magia y Hechicería y se embarca en una aventura llena de magia y misterio.</p>
         </div>
-
-        <div id="imageContainer" style="display: none;">
-            <img src="cien años de soledad.jpg" alt="Imagen de Gabriel García Márquez" width="200" height="200">
+        <div style="text-align: center; margin-right: 20px;">
+            <img src="cien años de soledad.jpg" alt="Imagen de Gabriel García Márquez" width="200" height="350">
+            <p style="width: 200px;">"Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo."</p>
         </div>
-
-        <script>
-            function showImage() {
-                document.getElementById('imageContainer').style.display = 'block';
-            }
-        </script>
-    </section>
-</body>
-
-</html>
+        <div style="text-align: center;">
+            <img src="don quijote.jpg" alt="Imagen de don quijote" width="200" height="350">
+            <p style="width: 200px;">"Encomiéndate a Dios de todo corazón, que muchas veces suele llover sus misericordias en el tiempo que están más secas las esperanzas."</p>
+        </div>
+    </div>
+</section>

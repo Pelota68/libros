@@ -15,8 +15,7 @@ app.get('/', (req, res) => {
 const pool = mariadb.createPool({
     host: '127.0.0.1',
     user: 'root',
-    password: '123456',
-    database: 'libreria_gabo',
+    database: 'softwaregabo',
     connectionLimit: 5
 });
 
@@ -32,8 +31,9 @@ pool.getConnection()
 
 // Endpoint para obtener los libros
 app.get('/libros', (req, res) => {
-    pool.query('SELECT * FROM libros')
+    pool.query('SELECT * FROM libro')
         .then(results => {
+            console.log('Resultados de la consulta:', results); // Agrega este mensaje de depuración
             res.json(results);
         })
         .catch(err => {
@@ -41,6 +41,7 @@ app.get('/libros', (req, res) => {
             res.status(500).json({ error: 'Error al obtener los libros' });
         });
 });
+
 
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);

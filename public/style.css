@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    /* Hace que la barra de navegación ocupe todo el espacio disponible */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 150px;
+}

@@ -13,3 +13,31 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error al obtener los libros:', error));
 });
+
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let username = document.querySelector('[name="uname"]').value;
+    let password = document.querySelector('[name="psw"]').value;
+
+    fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: username,
+                password: password
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Login successful');
+            } else {
+                alert('Login failed');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+});

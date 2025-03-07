@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="libreria.css">
     <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+
     <!-- Aquí enlazas tu archivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -53,25 +53,64 @@
 
 
     </header>
+    <div class="container">
 
-    <section>
-        <div class="contenedor" style="display: flex;">
-            <div style="text-align: center; margin-right: 20px;">
-                <img src="harry potter.jpg" alt="logo librería" width="200" height="350">
-                <p style="width: 200px;">No son nuestras habilidades lo que nos definen ,sino nuestras elecciones"-albus Dumbledore</p>
-            </div>
-            <div style="text-align: center; margin-right: 20px;">
-                <img src="cien años de soledad.jpg" alt="Imagen de Gabriel García Márquez" width="200" height="350">
-                <p style="width: 200px;">"Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo."</p>
-            </div>
-            <div style="text-align: center;">
-                <img src="don quijote.jpg" alt="Imagen de don quijote" width="200" height="350">
-                <p style="width: 200px;">"Encomiéndate a Dios de todo corazón, que muchas veces suele llover sus misericordias en el tiempo que están más secas las esperanzas."</p>
-            </div>
-        </div>
-    </section>
+        <aside>
+            <p>En <strong>Software Gabo</strong>: encontrarás libros populares para disfrutar de su lectura.</p>
 
-    </section>
+
+
+            <form id="loginForm">
+                <div class="imgcontainer">
+                    <img src="iniciosesionusuario.jpg" alt="Avatar" class="avatar" width="150" height="150">
+
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Enter Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <br>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+
+        </aside>
+        <main>
+            <section>
+                <div class="contenedor" style="display: flex;">
+                    <div style="text-align: center; margin-right: 20px;">
+                        <img src="harry potter.jpg" alt="Logo librería" width="200" height="350">
+                        <p style="width: 200px;">"No son nuestras habilidades lo que nos definen, sino nuestras elecciones" - Albus Dumbledore</p>
+                    </div>
+                    <div style="text-align: center; margin-right: 20px;">
+                        <img src="cien años de soledad.jpg" alt="Imagen de Gabriel García Márquez" width="200" height="350">
+                        <p style="width: 200px;">"Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo."</p>
+                    </div>
+                    <div style="text-align: center; margin-right: 20px;">
+                        <img src="don quijote.jpg" alt="Imagen de Don Quijote" width="200" height="350">
+                        <p style="width: 200px;">"Encomiéndate a Dios de todo corazón, que muchas veces suele llover sus misericordias en el tiempo que están más secas las esperanzas."</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="steve job.jpg" alt="Imagen de Steve Jobs" width="200" height="350">
+                        <p style="width: 200px;">"El diseño no es solo cómo se ve algo, sino cómo funciona" - Steve Jobs</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
     <footer>
         <!-- Footer con barra de navegación horizontal -->
         <nav class="footer-navbar ">
@@ -87,6 +126,7 @@
                 </li>
             </ul>
         </nav>
+
     </footer>
 
     <!-- Scripts de Bootstrap y dependencias -->
